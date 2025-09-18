@@ -5,6 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shattys Collection - Handmade with Love</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Additional styles for the home page images */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+                        url('https://placehold.co/1200x600/FFD1DC/B5C9E0?text=Crochet+Background') center/cover no-repeat;
+        }
+        
+        .product-image {
+            height: 200px;
+            background-color: #f8f8f8;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        
+        .product-card:hover .product-image img {
+            transform: scale(1.05);
+        }
+        
+        .placeholder-text {
+            color: #888;
+            font-style: italic;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -42,7 +74,10 @@
         
         <div class="products-grid">
             <div class="product-card">
-                <div class="product-image">Product Image</div>
+                <div class="product-image">
+                    <!-- Replace with your actual image -->
+                    <img src="https://placehold.co/400x400/FFD1DC/333?text=Crochet+Bag" alt="Handmade crochet bag">
+                </div>
                 <div class="product-info">
                     <h3>Crochet Bag</h3>
                     <p>GHS 85.00</p>
@@ -51,7 +86,10 @@
             </div>
             
             <div class="product-card">
-                <div class="product-image">Product Image</div>
+                <div class="product-image">
+                    <!-- Replace with your actual image -->
+                    <img src="https://placehold.co/400x400/C9E4DE/333?text=Summer+Dress" alt="Handmade summer dress">
+                </div>
                 <div class="product-info">
                     <h3>Summer Dress</h3>
                     <p>GHS 120.00</p>
@@ -60,7 +98,10 @@
             </div>
             
             <div class="product-card">
-                <div class="product-image">Product Image</div>
+                <div class="product-image">
+                    <!-- Replace with your actual image -->
+                    <img src="https://placehold.co/400x400/B5C9E0/333?text=Cozy+Blanket" alt="Handmade cozy blanket">
+                </div>
                 <div class="product-info">
                     <h3>Cozy Blanket</h3>
                     <p>GHS 200.00</p>
@@ -68,11 +109,21 @@
                 </div>
             </div>
         </div>
+        
+        <div class="about-preview">
+            <h2 class="section-title">Why Choose Shattys Collection?</h2>
+            <div class="about-content">
+                <p>At Shattys Collection, we take pride in creating beautiful, handmade crochet items that are made with love and attention to detail. Each piece is unique and crafted with the finest materials to ensure quality and durability.</p>
+                <p>Our products are perfect for those who appreciate handmade craftsmanship and want to own something truly special.</p>
+                <a href="about.html" class="btn">Learn More About Us</a>
+            </div>
+        </div>
     </main>
 
     <footer>
         <div class="container">
             <p>&copy; 2023 Shattys Collection. All rights reserved.</p>
+            <p>East Legon, Adjiringanor | 0556129123</p>
         </div>
     </footer>
 
