@@ -1,0 +1,345 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #FFD1DC; /* Pastel pink */
+    --secondary: #C9E4DE; /* Pastel mint */
+    --accent: #B5C9E0; /* Pastel blue */
+    --text: #333333;
+    --light: #FFFFFF;
+    --shadow: rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text);
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Header & Navigation */
+header {
+    background-color: var(--light);
+    box-shadow: 0 2px 10px var(--shadow);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+}
+
+.nav-menu li {
+    margin-left: 1.5rem;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: var(--text);
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: var(--primary);
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: var(--text);
+    transition: all 0.3s;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+                url('./Easy-spring-crochet-bag.jpg.webp');
+    background-size: cover;
+    background-position: center;
+    color: var(--light);
+    text-align: center;
+    padding: 5rem 1rem;
+    margin-bottom: 2rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.hero-info {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: var(--text);
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+}
+
+/* Section Styling */
+.section-title {
+    text-align: center;
+    margin: 2rem 0;
+    color: var(--primary);
+}
+
+/* Products Grid */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.product-card {
+    background: var(--light);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px var(--shadow);
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-image {
+    width: 100%;
+    height: 200px;
+    background-color: var(--secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text);
+}
+
+.product-info {
+    padding: 1rem;
+}
+
+.product-info h3 {
+    margin-bottom: 0.5rem;
+}
+
+.product-info p {
+    font-weight: bold;
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--primary);
+    color: var(--text);
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: var(--accent);
+}
+
+/* Cart */
+.cart {
+    background: var(--light);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px var(--shadow);
+    margin: 2rem 0;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.cart-total {
+    font-weight: bold;
+    text-align: right;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.checkout-btn {
+    background-color: #25D366; /* WhatsApp green */
+    color: white;
+    margin-top: 1rem;
+}
+
+.checkout-btn:hover {
+    background-color: #128C7E; /* Darker WhatsApp green */
+}
+
+/* About Section */
+.about-content {
+    background: var(--light);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px var(--shadow);
+    margin: 2rem 0;
+}
+
+/* Contact Form */
+.contact-form {
+    background: var(--light);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px var(--shadow);
+    margin: 2rem 0;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+.form-group textarea {
+    min-height: 150px;
+}
+
+.submit-btn {
+    background-color: var(--primary);
+    color: var(--text);
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.submit-btn:hover {
+    background-color: var(--accent);
+}
+
+.contact-info {
+    background: var(--light);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px var(--shadow);
+    margin: 2rem 0;
+}
+
+.map {
+    margin-top: 2rem;
+    height: 300px;
+    background-color: #eee;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--text);
+    color: var(--light);
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+    
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: var(--light);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 10px var(--shadow);
+        padding: 1rem 0;
+    }
+    
+    .nav-menu.active {
+        left: 0;
+    }
+    
+    .nav-menu li {
+        margin: 1rem 0;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .hero p {
+        font-size: 1.2rem;
+    }
+}

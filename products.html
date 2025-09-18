@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Shattys Collection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">Shattys Collection</a>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="products.html" class="nav-link">Products</a></li>
+                    <li><a href="yarns.html" class="nav-link">Yarns</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1 class="section-title">Our Products</h1>
+        
+        <h2 class="section-title">Bags</h2>
+        <div class="products-grid">
+            <div class="product-card">
+                <!-- Replace with your actual image -->
+                <img src="./crocheted mesh market bag-min.jpg" alt="Handmade crochet beach tote" class="product-image">
+                <div class="product-info">
+                    <h3>Beach Tote</h3>
+                    <p>GHS 85.00</p>
+                    <button class="btn" onclick="addToCart('Beach Tote', 85.00)">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <!-- Replace with your actual image -->
+                <img src="./51wMoZ-h2CL._SY695_.jpg" alt="Handmade crochet market bag" class="product-image">
+                <div class="product-info">
+                    <h3>Market Bag</h3>
+                    <p>GHS 75.00</p>
+                    <button class="btn" onclick="addToCart('Market Bag', 75.00)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Additional product categories would follow the same pattern -->
+        
+        <div class="cart">
+            <h2>Your Cart</h2>
+            <div id="cart-items"></div>
+            <div id="cart-total" class="cart-total">Total: GHS 0.00</div>
+            <button class="btn checkout-btn" onclick="checkout()">Checkout via WhatsApp</button>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Shattys Collection. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
